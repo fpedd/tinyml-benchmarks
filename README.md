@@ -1,4 +1,4 @@
-# MLPerf™ Tiny Deep Learning Benchmarks for Embedded Devices
+# TinyML Benchmarks
 While the TinyML benchmarks form [MLPerf™]() are a great, I found them verbose and hard to use for my projects. Thus, I assembled this collection of read-to-go and easy to use benchmarks. They are based on the quantized models from the MLPerf™. However, they are completely self contained and have no external dependencies. The code for running them on TensorFlow Lite Micro is less than a 100 lines. All data files are automatically generated using a couple of Python scripts that I will release shortly.
 
 Furthermore, these benchmarks are not only intended to give feedback on performance, but also on functionality. Thus, they can be used to very correctness of the underlying kernel implementation.
