@@ -13,3 +13,13 @@ This repository contains the four core benchmarks from the TinyML MLPerf™ benc
 - [`/benchmarks/ic`](/benchmarks/ic) Image classification - Small image classification using the Cifar10 dataset and a ResNet model architecture
 - [`/benchmarks/toy`](/benchmarks/toy) ToyCar anomaly detection - Detecting anomalies in machine operating sounds using a deep autoencoder
 - [`/benchmarks/vww`](/benchmarks/vww) Visual wake words - Image classification based on the presence of people using a MobileNet architecture
+
+
+## TensorFlow Lite Micro Source Tree
+The TensorFlow Lite Micro directories are generated from the [TensorFlow Lite Micro](https://github.com/tensorflow/tflite-micro) repo using:  
+`python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py ./tree`  
+In order to generate the source tree with specialized (CMSIS-NN) kernels, use:  
+`python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py ./tree-cmsisnn --makefile_options=OPTIMIZED_KERNEL_DIR=cmsis_nn`  
+Then simply copy the `tensorflow/` and `third_party/` directories over.  
+
+Since using `glob` in CMake is not popular, once can instead use `find . -regex '.*/.*\.\(c\|cc\|cpp\|h\|hpp\)$'` to "manually" create a list of sources. 
