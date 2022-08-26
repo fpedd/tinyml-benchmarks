@@ -161,6 +161,7 @@ set(TFLM_SRCS
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/kernel_runner.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/hard_swish.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/add.cc
+  ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/select.cc
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/ceil.cc
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/svdf.cc
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/micro/kernels/strided_slice.cc
@@ -304,6 +305,7 @@ set(TFLM_SRCS
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/elu.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/add.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/pad.h
+  ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/select.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/add_n.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/div.h
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/kernels/internal/reference/cumsum.h
