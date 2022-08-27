@@ -3,7 +3,7 @@ While the TinyML benchmarks from [MLPerf](https://github.com/mlcommons/tiny) are
 
 Furthermore, these benchmarks are intended not only to give feedback on performance but also on functionality. Thus, they can be used to verify the correctness of the underlying kernel implementation.
 
-Currently, I have generated 25 samples for every model. However, I can generate upwards of 1000 samples using Python scripts.
+Currently, I have generated 25 samples for every model. However, I can generate upwards of 1000 samples using the provided Python scripts.
 
 **Disclaimer: These benchmarks are obviously of little use as they are! They are intended to be used as a baseline for integration into a larger project!**
 
