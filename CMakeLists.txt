@@ -353,6 +353,16 @@ set(TFLM_SRCS
   ${CMAKE_SOURCE_DIR}/tensorflow/lite/builtin_op_data.h
 )
 
+# TODO(fabianpedd): Integrate CMSIS-NN / muRISCV-NN library
+# string(REPLACE "/fully_connected.cc" "/cmsis_nn/fully_connected.cc" TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/mul.cc"             "/cmsis_nn/mul.cc"             TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/add.cc"             "/cmsis_nn/add.cc"             TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/svdf.cc"            "/cmsis_nn/svdf.cc"            TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/conv.cc"            "/cmsis_nn/conv.cc"            TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/depthwise_conv.cc"  "/cmsis_nn/depthwise_conv.cc"  TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/pooling.cc"         "/cmsis_nn/pooling.cc"         TFLM_SRCS ${TFLM_SRCS})
+# string(REPLACE "/softmax.cc"         "/cmsis_nn/softmax.cc"         TFLM_SRCS ${TFLM_SRCS})
+
 set(TFLM_THIRD_PARTY_SRCS
   ${CMAKE_SOURCE_DIR}/third_party/flatbuffers/include/flatbuffers/util.h
   ${CMAKE_SOURCE_DIR}/third_party/flatbuffers/include/flatbuffers/vector.h
